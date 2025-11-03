@@ -45,29 +45,29 @@
             alt="Image 1"
             class="absolute inset-x-0 bottom-0 w-full h-full object-cover z-0"
           />
-  <div
-    @touchstart="startDrag"
-    @touchmove.prevent="onDrag"
-    @touchend="endDrag"
-    class="absolute bottom-8 left-1/2 transform -translate-x-1/2 h-12 w-72 bg-white z-10 rounded-full flex items-center justify-center overflow-hidden"
-  >
-    <!-- Chevron coulissant -->
-    <div
-      class="absolute left-1 bg-[#91CF49] w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300 ease-out"
-      :style="{ transform: `translateX(${chevronX}px)` }"
-    >
-      <ion-icon :icon="chevronForwardOutline" size="small" color="white"></ion-icon>
-    </div>
+        <div
+          @touchstart="startDrag"
+          @touchmove.prevent="onDrag"
+          @touchend="endDrag"
+          class="absolute bottom-8 left-1/2 transform -translate-x-1/2 h-12 w-72 bg-white z-10 rounded-full flex items-center justify-center overflow-hidden"
+        >
+          <!-- Chevron coulissant -->
+          <div
+            class="absolute left-1 bg-[#91CF49] w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300 ease-out z-10"
+            :style="{ transform: `translateX(${chevronX}px)` }"
+          >
+            <ion-icon :icon="chevronForwardOutline" size="small" color="white"></ion-icon>
+          </div>
 
-    <!-- Checkmark fixe -->
-    <div class="absolute right-1 bg-[#EFF0F0] w-10 h-10 rounded-full flex items-center justify-center">
-      <ion-icon :icon="checkmarkOutline" size="small" color="white"></ion-icon>
-    </div>
+          <!-- Checkmark fixe -->
+          <div class="absolute right-1 bg-[#EFF0F0] w-10 h-10 rounded-full flex items-center justify-center">
+            <ion-icon :icon="checkmarkOutline" size="small" color="white"></ion-icon>
+          </div>
 
-    <ion-text class="text-center text-lg font-semibold select-none">
-      Get Started
-    </ion-text>
-  </div>
+          <ion-text class="text-center text-lg font-semibold select-none">
+            Get Started
+          </ion-text>
+        </div>
 
 
         </swiper-slide>
@@ -97,7 +97,7 @@
           />
 
           <ion-button 
-            class="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-[white] w-70 h-10 rounded-full flex items-center justify-center z-10"
+            class="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-[white] w-70 h-12 rounded-full flex items-center justify-center z-10"
             fill="clear"
             style="--color: black; --border-radius: 50%;">
             <div class="absolute left-3 h-7 w-7 rounded-full flex items-center justify-center">
@@ -105,7 +105,7 @@
             </div>
                 <ion-text class="text-center text-lg font-semibold text-black">Start Tracking</ion-text>
             </ion-button>
-          <div class="shadow-lg absolute bottom-[1.8rem] left-1/2 transform -translate-x-1/2 bg-[#91CF49] w-72 h-14 rounded-full flex items-center justify-center z-0">
+          <div class="shadow-lg absolute bottom-[1.75rem] left-1/2 transform -translate-x-1/2 bg-[#91CF49] w-72 h-14 rounded-full flex items-center justify-center z-0">
           </div>
         </swiper-slide>
 
