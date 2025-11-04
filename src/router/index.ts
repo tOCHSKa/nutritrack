@@ -4,6 +4,8 @@ import HomePage from '../views/HomePage.vue'
 import SearchFood from '../presentation/pages/SearchFood.vue'
 import Tabs from '../presentation/pages/Tabs.vue'
 import Onboarding from '../presentation/pages/Onboarding.vue'
+import Login from '../views/LoginPage.vue';
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -13,6 +15,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/onboarding',
     component: Onboarding
   },
+  { path: '/login', component: Login },
   { path: '/search', component: SearchFood },
   {
     path: '/tabs',
